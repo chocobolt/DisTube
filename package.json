@@ -25,6 +25,7 @@
     "dist"
   ],
   "scripts": {
+    "start": "node src/index.ts"
     "test": "vitest run",
     "docs": "typedoc",
     "lint": "prettier --check . && eslint .",
