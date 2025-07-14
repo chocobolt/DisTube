@@ -1,49 +1,12 @@
 {
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"],
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "lib": ["ESNext"],
-    "target": "ESNext",
-    "emitDecoratorMetadata": false,
-    "experimentalDecorators": true,
-    "useDefineForClassFields": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strict": true,
-    "declaration": true,
-    "inlineSources": true,
-    "newLine": "lf",
-    "noEmitHelpers": true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "outDir": "dist",
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "sourceMap": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "isolatedModules": true
+    "strict": true,
+    "skipLibCheck": true
   },
-  "typedocOptions": {
-    "name": "DisTube API Documentation",
-    "plugin": ["typedoc-material-theme", "typedoc-plugin-extras"],
-    "themeColor": "#ED4245",
-    "entryPoints": ["src/index.ts"],
-    "out": "docs",
-    "sidebarLinks": {
-      "GitHub": "https://github.com/skick1234/DisTube",
-      "Discord": "https://discord.gg/feaDd9h",
-      "Guide": "https://github.com/skick1234/DisTube/wiki"
-    },
-    "hostedBaseUrl": "https://distube.js.org",
-    "favicon": "https://raw.githubusercontent.com/skick1234/cdn/refs/heads/main/DisTube/img/favicon.png",
-    "customDescription": "A powerful Discord.js module for simplifying music commands and effortless playback of various sources with integrated audio filters."
-  }
+  "include": ["src"]
 }
